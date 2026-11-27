@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b8d0g2qk0iloy"]
+
+[ext_resource type="Script" uid="uid://yljyfd6ajt0m" path="res://slime.gd" id="1_5jc4t"]
+[ext_resource type="Texture2D" uid="uid://8pxttr25n7rw" path="res://platformer_sprites/sprites/slime.png" id="2_4l1t8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwnus"]
+size = Vector2(14, 11)
+
+[node name="slime" type="Area2D" unique_id=1792199465]
+script = ExtResource("1_5jc4t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=204985397]
+texture = ExtResource("2_4l1t8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1519041971]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_bwnus")

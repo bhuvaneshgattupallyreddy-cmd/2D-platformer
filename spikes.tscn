@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://snnjwqvvpjgx"]
+
+[ext_resource type="Script" uid="uid://b16x3th8kj5sr" path="res://spikes.gd" id="1_nrdsm"]
+[ext_resource type="Texture2D" uid="uid://buex43see3ae6" path="res://platformer_sprites/sprites/spikes.png" id="2_8fhau"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwnus"]
+size = Vector2(16, 11)
+
+[node name="spikes" type="Area2D" unique_id=912642093]
+script = ExtResource("1_nrdsm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=502564810]
+position = Vector2(0, 5)
+texture = ExtResource("2_8fhau")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=216857800]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_bwnus")

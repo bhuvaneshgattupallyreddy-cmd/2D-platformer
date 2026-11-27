@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://caxkg3grnqx8v"]
+
+[ext_resource type="Script" uid="uid://dn4ycn1nddskk" path="res://door.gd" id="1_v6xrn"]
+[ext_resource type="Texture2D" uid="uid://d2uptkwqq5rq6" path="res://platformer_sprites/sprites/door_preview_8x.png" id="2_0phs7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwnus"]
+size = Vector2(260.83057, 387.339)
+
+[node name="door" type="Area2D" unique_id=1391772625]
+script = ExtResource("1_v6xrn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=806703347]
+position = Vector2(988, 377)
+scale = Vector2(0.10351571, 0.14973961)
+shape = SubResource("RectangleShape2D_bwnus")
+
+[node name="doorsssss" type="Sprite2D" parent="." unique_id=46461114]
+position = Vector2(988, 377.00003)
+scale = Vector2(0.10351571, 0.14973961)
+texture = ExtResource("2_0phs7")
